@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
   margin: 0;
@@ -76,5 +77,18 @@ section {
         opacity: 1;
         transform: scale(1.05);
         background: linear-gradient(30deg, #53f9ff, #25b9fd); }
+    section form article.hobby h2, section form article.gender h2 {
+      font: normal 16px/1 'arial';
+      color: #888;
+      margin-bottom: 10px; }
+    section form article.hobby label, section form article.gender label {
+      display: inline-block;
+      color: skyblue; }
+    section form article.hobby input, section form article.gender input {
+      margin-right: 6px; }
+  section form p {
+    font: 12px/1 "맑은 고딕";
+    color: hotpink;
+    margin-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */

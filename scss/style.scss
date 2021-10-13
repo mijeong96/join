@@ -78,9 +78,34 @@ section {
                     opacity: 1;
                     transform:scale(1.05);
                     background: linear-gradient(30deg, #53f9ff, #25b9fd);
-                    
                 }
             }
+
+            
+            //체크박스, 라디오버튼
+            &.hobby,&.gender {
+                h2 {
+                    font: normal 16px/1 'arial';
+                    color: #888;
+                    margin-bottom: 10px;
+                }
+
+                label {
+                    display: inline-block;
+                    color: skyblue;
+                }
+
+                input{
+                    margin-right: 6px;
+                }
+            }
+        }
+
+        //에러 메시지 스타일
+        p {
+            font: 12px/1 "맑은 고딕";
+            color: hotpink;
+            margin-bottom: 10px;
         }
     }
 }
