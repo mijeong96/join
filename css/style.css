@@ -44,7 +44,7 @@ section {
       color: #999;
       display: block;
       margin-bottom: 10px; }
-    section form article input[type=text], section form article input[type=password], section form article input[type=textarea] {
+    section form article input[type=text], section form article input[type=password], section form article textarea, section form article select {
       width: 100%;
       background: #f5ffff;
       border: 1px solid #ddd;
@@ -54,9 +54,9 @@ section {
       color: skyblue;
       resize: none;
       transition: 1s; }
-      section form article input[type=text]::placeholder, section form article input[type=password]::placeholder, section form article input[type=textarea]::placeholder {
+      section form article input[type=text]::placeholder, section form article input[type=password]::placeholder, section form article textarea::placeholder, section form article select::placeholder {
         color: skyblue; }
-      section form article input[type=text]:focus, section form article input[type=password]:focus, section form article input[type=textarea]:focus {
+      section form article input[type=text]:focus, section form article input[type=password]:focus, section form article textarea:focus, section form article select:focus {
         background: #e6faff;
         border: 1px solid #1aabff; }
     section form article input[type=reset], section form article input[type=submit] {

@@ -40,7 +40,7 @@ section {
             }
 
             //입력양식 스타일링
-            input[type=text],input[type=password],input[type=textarea] {
+            input[type=text],input[type=password],textarea,select {
                 width: 100%;
                 background: #f5ffff;
                 border: 1px solid #ddd;

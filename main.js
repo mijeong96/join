@@ -1,30 +1,20 @@
-//DOM선택 Vanila script
-
-// const btns = document.querySelector(".btns");
-
-// const btns_li = btns.querySelectorAll("li");
-
-// console.log(btns_li);
-
-// <DOM styling with Vanila Script>
-// for(let i=0; i<btns_li.length; i++){
-//     btns_li[i].style.border = "1px solid red";
-// }
-
-// for(let i=0; i<btns_li.length; i++){
-//     btns_li[i].addEventListener("click", e=>{
-//         console.log("test");
-//     });
-// }
+$("input[type=submit]").on("click",function(e){
+    e.preventDefault();
 
 
-//DOM 선택 jQuery 
-const btns_li = $(".btns li");
+    if(len === undefined) len = 5;
+    let txt = $("input[name=userid]").val();
 
-//DOM Styling with jQuery
-$(".btns li").css("border","1px solid blue");
+    //만약 텍스트의 글자수가 최소글자수 이상이면
+    if(txt.length >=len){
+        $("[name=userid]").parent().find("p").remove();
+        return true;
+    }else{//만약 텍스트 글자수가 최소 글자수를 넘기지 못하면
+        //에러메시지 생성
+        $("[name=userid]").parent().append(
+            "<p>입력항목을 5글자 이상 입력하세요</p>"
+        );
+    }
+    return false;
 
-//DOM binding Event with jQuery
-$(".btn li").on("click", e=>{
-    console.log("test");
 });
